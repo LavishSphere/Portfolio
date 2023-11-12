@@ -79,10 +79,15 @@
         <div class="horizontal-separator"></div>
     </section>
     <footer>
-        <p style="text-align: center; margin: 20px 0;">
-            Copyright <a href="https://github.com/LavishSphere/Portfolio/" target="_blank">Portfolio</a> by Ash</a>
+        <p id="copyright" style="text-align: center; margin: 20px 0;">
+            Copyright <span id="currentYear"></span> Portfolio by Ash - All Rights Reserved
         </p>
     </footer>
+<script>
+    document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+</script>
+
+
 </body>
 
 </html>
